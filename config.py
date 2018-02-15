@@ -1,4 +1,3 @@
-
 import json
 import os
 import re
@@ -8,16 +7,16 @@ import shutil
 _config = {
 "Analytics"      : True,
 "AdMob"          : True,
-"Invites"        : True,
-"RemoteConfig"   : True,
-"Notification"   : True,
-"Storage"        : True,
+"Invites"        : False,
+"RemoteConfig"   : False,
+"Notification"   : False,
+"Storage"        : False,
 "Firestore"      : False,
 
-"Authentication" : True,
-"AuthGoogle"     : True,
-"AuthFacebook"   : True,
-"AuthTwitter"    : True
+"Authentication" : False,
+"AuthGoogle"     : False,
+"AuthFacebook"   : False,
+"AuthTwitter"    : False
 }
 
 FILES_LIST		= \
@@ -229,4 +228,5 @@ def configure(env):
         env.android_add_to_manifest("android/AndroidManifestChunk.xml");
         env.android_add_to_permissions("android/AndroidPermissionsChunk.xml");
         env.android_add_default_config("minSdkVersion 15")
-        env.android_add_default_config("applicationId 'com.froglogics.dotsndots'")
+	env.android_add_default_config("applicationId 'studio.nanbu.monstertumble'")
+
