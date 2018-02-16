@@ -1,4 +1,3 @@
-
 import json
 import os
 import re
@@ -8,16 +7,16 @@ import shutil
 _config = {
 "Analytics"      : True,
 "AdMob"          : True,
-"Invites"        : True,
-"RemoteConfig"   : True,
-"Notification"   : True,
-"Storage"        : True,
+"Invites"        : False,
+"RemoteConfig"   : False,
+"Notification"   : False,
+"Storage"        : False,
 "Firestore"      : False,
 
-"Authentication" : True,
-"AuthGoogle"     : True,
-"AuthFacebook"   : True,
-"AuthTwitter"    : True
+"Authentication" : False,
+"AuthGoogle"     : False,
+"AuthFacebook"   : False,
+"AuthTwitter"    : False
 }
 
 FILES_LIST		= \
